@@ -15,8 +15,7 @@ export function Tela1Screen(){
         <ImageBackground source={image} resizeMode="cover" style={styles.image}>
                 <Text style={{textAlign: 'center', color:'#FFFFFF',fontSize:32}}>MARVEL VS DC </Text>
             <Button title="Entre aqui" color="#841584" onPress={function () {
-                 alert("Clicou");
-                 navigation.navigate('tela2')
+                         navigation.navigate('tela2')
             }}/>
             </ImageBackground>
         </View>
