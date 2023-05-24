@@ -7,6 +7,8 @@ const image = {uri: 'https://i.pinimg.com/originals/da/8d/4a/da8d4a248391463b235
 
 export function Tela1Screen(){
 
+  
+
   const navigation = useNavigation<any>();
 
     return(
