@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, Text, Image, StyleSheet, Button } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-const nav = useNavigation<any>();
+
 
 const styles = StyleSheet.create({
   tela2ScreenProps: {
@@ -19,6 +19,7 @@ export interface Tela2ScreenProps {
 
 
 export function Tela2Screen(props: Tela2ScreenProps) {
+  const navigation = useNavigation<any>();
   return (
     <View style={{justifyContent:'center', flex:1 , alignItems:'center' }}>
       <Text>Qual o Melhor Personagem</Text>
@@ -27,7 +28,10 @@ export function Tela2Screen(props: Tela2ScreenProps) {
         <Image style={styles.imagem} source={require("../../img/Superman.jpg")} />
                  </View>
                   <Button title="capiao America 1"  color="#841584" />
-                  <Button title="The Batman 2"  color="#841584" />
+                  <Button title="super homem 2"  color="#841584" />
+                  <Button title="Entre aqui" color="#00BFFF" onPress={function () {
+                         navigation.navigate('tela3')
+            }}/>
                   
           
                   

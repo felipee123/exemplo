@@ -3,10 +3,11 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { Tela1Screen } from '../Screens/Tela1';
 import { Tela2Screen } from '../Screens/Tela2';
 import { Tela3Screen } from '../Screens/Tela3';
-import { Tela4Screen } from '../Screens/Tela 4';
-import { Tela5Screen } from '../Screens/Tela 5';
-import { Tela6Screen } from '../Screens/Tela 6';
+import { Tela4Screen } from '../Screens/Tela4';
+import { Tela5Screen } from '../Screens/Tela5';
+import { Tela6Screen } from '../Screens/Tela6';
 import { Tela7Screen } from '../Screens/Tela7';
+
 
 export type Navegacaotype ={
     tela1: undefined,
@@ -30,6 +31,7 @@ export const NavegacaoPrincipal = () => (
             <Stack.Screen name="tela5" component={Tela5Screen} />
             <Stack.Screen name="tela6" component={Tela6Screen} />
             <Stack.Screen name="tela7" component={Tela7Screen} />
+            
         </Stack.Navigator>
     </NavigationContainer>
 )
