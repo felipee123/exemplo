@@ -20,7 +20,7 @@ export function Tela4Screen (props: Tela4Screen) {
   const navigation = useNavigation<any>();
     return (
       <View style={{justifyContent:'center', flex:1 , alignItems:'center' }}>
-      <Text>Qual o Melhor Personagem</Text>
+      <Text style={{fontSize:29,color:'#FF0000'}}>Qual o Melhor Personagem</Text>
       <View style={styles.tela2ScreenProps}>
         <Image style={styles.imagem} source={require("../../img/deadpool.jpg")} />
         <Image style={styles.imagem} source={require("../../img/pacificador.jpg")} />
