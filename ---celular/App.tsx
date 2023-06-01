@@ -6,6 +6,7 @@ import { Tela3Screen } from './src/Screens/Tela3';
 import { NavegacaoPrincipal } from './src/Navigations';
 
 
+
 export default function App() {
   return (
     <NavegacaoPrincipal />
