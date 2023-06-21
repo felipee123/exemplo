@@ -46,7 +46,7 @@ export default function App() {
                 setValorDevido(valorDevido-e);
                 return false;
               }
-          }),
+          })
 
         }
       ])
@@ -80,13 +80,14 @@ export default function App() {
         return(
           <View style={{borderBottomColor:'black', borderBottomWidth:1,marginBottom:10,paddingBottom:10,paddingLeft:30,flexDirection:'row',justifyContent:'space-between'}}>
           <Text>{e}:R${objetos[0].valores[val]},00</Text>
-          <TouchableOpacity onPress={()=>deletarDespesa(val)}/><AntDesign name="delete" size={24} color="black"/>
+          <TouchableOpacity onPress={()=>deletarDespesa(val)}><AntDesign name="delete" size={24} color="black"/></TouchableOpacity>
         </View>
         )
       })
      }
      </View>
      </View>
+   
 
   );
 }
@@ -103,3 +104,4 @@ const styles = StyleSheet.create({
 
   }
 });
+
